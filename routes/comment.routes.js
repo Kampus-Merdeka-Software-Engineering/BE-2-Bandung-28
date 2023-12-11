@@ -35,6 +35,7 @@ commentRoutes.post("/", async (req, res) => {
 const newComment = await prisma.comment.create({
     data: {
         name,
+        
         comment,
     },
 });
